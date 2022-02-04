@@ -9,6 +9,9 @@ import { Typography } from "@mui/material";
 // import Message from "../../Components/Message/Message";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
+import SwipeableTextMobileStepper from "../Components/SteperLandingPage";
+import PetCard from "../Components/PetCard";
+
 // import FeedBackList from "../../Components/FeedbackList/FeedbackList";
 
 const images = [
@@ -17,28 +20,28 @@ const images = [
     des: "モダンなデザインの3層ハンドメイドマスク",
 
     imgPath:
-      "https://images.unsplash.com/photo-1586867763684-05933c155795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "https://images.unsplash.com/photo-1581888227599-779811939961?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
   },
   {
     label: "保護された状態を保ち、スタイリッシュに見える",
     des: "モダンなデザインの3層ハンドメイドマスク",
 
     imgPath:
-      "https://images.unsplash.com/photo-1606501126768-b78d4569d3f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "https://images.unsplash.com/photo-1557495235-340eb888a9fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1413&q=80",
   },
   {
     label: "保護された状態を保ち、スタイリッシュに見える",
     des: "モダンなデザインの3層ハンドメイドマスク",
 
     imgPath:
-      "https://images.unsplash.com/photo-1592199121537-7217efde1c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
+      "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1392&q=80",
   },
   {
     label: "保護された状態を保ち、スタイリッシュに見える",
     des: "モダンなデザインの3層ハンドメイドマスク",
 
     imgPath:
-      "https://images.unsplash.com/photo-1603042521335-2bc9c8d9ee3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "https://images.unsplash.com/photo-1560534493-fca50fa9bfe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
 ];
 
@@ -65,7 +68,8 @@ export default function LandingPage() {
       <CssBaseline />
       <Container maxWidth="lg">
         <main>
-          {/* <SwipeableTextMobileStepper images={images} /> */}
+          <SwipeableTextMobileStepper images={images} />
+          
           <Typography
             gutterBottom
             variant="h5"
@@ -82,8 +86,7 @@ export default function LandingPage() {
               NEW{" "}
             </span>
           </Typography>
-          {/* <ImageListItemLanding /> */}
-          <Typography
+   <Typography
             gutterBottom
             variant="h5"
             component="div"
@@ -116,7 +119,7 @@ export default function LandingPage() {
             <LinkTab label="NEW" href="/trash" />
             <LinkTab label="セール" href="/spam" />
           </Tabs>
-          {/* <ListCard /> */}
+<PetCard/>          {/* <ListCard /> */}
           <Typography
             gutterBottom
             variant="h5"
