@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header";
+import LandingPage from "./Pages/Landingpage";
 
 function App() {
+  const sections = [
+    { title: "Home", url: "/" },
+    { title: "Nhận nuôi", url: "/adopt" },
+    { title: "Forum", url: "/forum"},
+    { title: "Dự án", url: "/project" },
+    { title: "Thông tin tiêm chủng", url: "/Vaccine" },
+    { title: "Thức ăn& làm đẹp", url: "#" },
+    { title: "Cho thú nuôi", url: "/Giving" },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+                <Header title="Blog" sections={sections} maxWidth="lg" />
+
+<LandingPage/>    
+</div>
   );
 }
 
